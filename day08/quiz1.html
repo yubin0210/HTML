@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz1.html</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .frame {
+            width: 1280px;
+            margin: 0 auto;
+        }
+        body > div {
+            /* border: 2px dashed grey; */
+        }
+        body > div > * {
+            /* border: 2px dashed orangered; */
+        }
+        body > div > * > * {
+            /* border: 2px dashed green; */
+        }
+        .sa {
+            display: flex;
+            justify-content: space-around;
+        }
+        .sb {
+            display: flex;
+            justify-content: space-between;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.top2 > ul {
+            padding-left: 0;
+            margin: 0;
+            padding: 10px 0;
+            list-style: none;
+            flex: 9;
+            height: max-content;
+        }
+        div.top2 > ul > li {
+            flex: 1;
+            font-size: 19px;
+        }
+        div.top2 > div.hamburger {
+            flex: 1;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        div.news div.image > img {
+            width: 386px;
+            border-radius: 50px;
+        }
+        div.news > div {
+            flex: 1;
+        }
+        div.news > div.left {
+            flex: 2;
+        }
+        div.news > div.right {
+            flex: 1;
+        }
+        div.text1 {
+            font-size: 72px;
+        }
+        div.text2 {
+            font-size: 25px;
+        }
+        p.title {
+            font-size: 30px;
+        }
+        p.ori {
+            font-size: 14px;
+        }
+        div.more {
+            text-align: right;
+            margin-right: 30px;
+            color: white;
+        }
+        p.more2 {
+            font-size: 18px;
+            color: white;
+        }
+        p.date {
+            color: white;
+        }
+        div.news {
+            background-color: #0055A5;
+            border-radius: 50px;
+            padding: 1px;
+        }
+        div.left {
+            background-color: white;
+            color: black;
+            border: 1px solid #0055A5;
+            border-radius: 50px;
+            padding: 20px;
+        }
+        div.right {
+            
+        }
+        div.intro {
+            border: 2px solid gray;
+            background-color: white;
+            border-radius: 50px;
+            width: 614px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        div.info {
+            border: 2px solid gray;
+            background-color: white;
+            border-radius: 50px;
+            width: 614px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        h4 {
+            color: blue;
+            font-size: 20px;
+        }
+        div.voc {
+            border: 2px solid gray;
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+        .client {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <div class="top1 frame sb">
+            <div><img src="농협로고.PNG"></div>
+            <div class="sa">
+                <div>Language</div>
+                <div>Banking</div>
+            </div>
+        </div>
+
+        <div class="top2 frame sb">
+            <ul class="sb">
+                <li><a href="#">은행안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">금융소비자보호</a></li>
+                <li><a href="#">기업지배구조</a></li>
+                <li><a href="#">경영정보</a></li>
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">홍보센터</a></li>
+            </ul>
+            <div class="hamburger center">≡</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="text1 frame center">사랑받는 일등 민족은행</div>
+        <div class="text2 frame center">농업인과 고객 모두가 행복한 금융을 만들어 갑니다</div>
+
+        <div class="news frame sb">
+            <div class="left sb">
+                <div class="image">
+                    <h3>NH뉴스</h3>
+                    <img src="https://www.nhbank.com/upload/nhnews/6052/imgpc_1.jpg">
+                </div>
+                    <div class="nh-news">NH뉴스
+                        <p class="title">NH농협은행, 올원뱅크 생활금융<br>
+                                         서비스  신규 오픈 이벤트 실시</p>
+                        <p class="ori">NH농협은행, 올원뱅크 생활금융서비스  신규 오픈<br>
+                                       이벤트 실시</p>
+                    </div>
+            </div>
+
+            <div class="right">
+                <div class="more">더보기></div>
+                <p class="more2">H농협은행,「제1회 퇴.연.숨.고.(퇴직연금숨은고수)를 찾아라!」개최</p>
+                <p class="date">2023-11-03</p>
+                <hr>
+                <p class="more2">NH농협은행, 농촌일손돕기와  자산관리 상담실시</p>
+                <p class="date">2023-11-03</p>
+            </div>
+        </div>
+            
+    </div>
+
+        <div class="frame sb">
+            <div class="intro">
+                <h4>NH농협은행 소개</h4>
+                <p>대한민국의 행복 파트너!</p>
+                <p>자세히 보기 ></p>
+            </div>
+            <div class="info">
+                <h4>경영정보</h4>
+                <p>경영.재무현황 및 공시자료</p>
+                <p>자세히 보기 ></p>
+            </div>
+        </div>
+
+        <div class="voc frame">
+            <h4 class="client">고객의 소리</h4>
+            <p class="client">자세히 보기 ></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1 frame">하단</div>
+    </div>
+    
+    
+</body>
+</html>

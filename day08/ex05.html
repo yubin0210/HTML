@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05.html</title>
+    <style>
+        div.overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        div.content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            z-index: 2;
+            padding: 10px;
+        }
+        div.button {
+            position: relative;
+            width: 70px;
+            border: 1px solid red;
+            background-color: white;
+            z-index: 3;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            margin: 10px;
+        }
+        div.button:hover {
+            background-color: red;
+            color: white;
+        }
+        div.modal {
+            display: none;
+        }
+        div.button:hover + div.modal {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>css 모달</h1>
+    <hr>
+
+    <div id="root">
+        <div class="button">버튼1</div>
+        <div class="modal">
+            <div class="overlay"></div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae saepe, ab aspernatur sunt soluta ipsa totam sed harum temporibus! Voluptates accusantium saepe aspernatur ducimus veniam natus, doloremque sit quibusdam!</p>
+            </div>
+        </div>
+
+        <div class="button">버튼2</div>
+        <div class="modal">
+            <div class="overlay"></div>
+            <div class="content">
+                <p>
+                    <img src="danbi.jpg" width="200">
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
